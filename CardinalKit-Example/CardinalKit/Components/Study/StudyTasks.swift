@@ -71,15 +71,14 @@ struct StudyTasks {
         
         steps += [instructionStep]
         
-        // Coffee Step
-        let healthScaleAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
-        let healthScaleQuestionStep = ORKQuestionStep(identifier: "HealthScaleQuestionStep", title: "Coffee Intake", question: "How many cups of coffee did you have today?", answer: healthScaleAnswerFormat)
+        // Picture Step
+        let pictureStep = ORKImageCaptureStep(identifier: "before");
         
-        steps += [healthScaleQuestionStep]
+        steps += [pictureStep]
         
         //SUMMARY
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
-        summaryStep.title = "Thank you for tracking your coffee."
+        summaryStep.title = "Thank you for taking a picture."
         summaryStep.text = "We appreciate your time."
         
         steps += [summaryStep]
@@ -101,15 +100,14 @@ struct StudyTasks {
         
         steps += [instructionStep]
         
-        // Coffee Step
-        let healthScaleAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
-        let healthScaleQuestionStep = ORKQuestionStep(identifier: "HealthScaleQuestionStep", title: "Coffee Intake", question: "How many cups of coffee did you have today?", answer: healthScaleAnswerFormat)
+        // Picture Step
+        let pictureStep = ORKImageCaptureStep(identifier: "before");
         
-        steps += [healthScaleQuestionStep]
+        steps += [pictureStep]
         
         //SUMMARY
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
-        summaryStep.title = "Thank you for tracking your coffee."
+        summaryStep.title = "Thank you for taking a picture."
         summaryStep.text = "We appreciate your time."
         
         steps += [summaryStep]
