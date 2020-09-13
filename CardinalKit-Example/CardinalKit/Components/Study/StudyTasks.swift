@@ -62,30 +62,39 @@ struct StudyTasks {
         Before Picture
      */
     static let beforePictureTask: ORKOrderedTask = {
-        var steps = [ORKStep]()
-        
-        // Instruction step
-        let instructionStep = ORKInstructionStep(identifier: "IntroStep")
-        instructionStep.title = "Before Picture"
-        instructionStep.text = "This will provide a before picture to be compared with after a meal."
-        
-        steps += [instructionStep]
-        
-        // Picture Step
-        let pictureStep = ORKImageCaptureStep(identifier: "before");
-        
-        steps += [pictureStep]
-        
-        //SUMMARY
-        let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
-        summaryStep.title = "Thank you for taking a picture."
-        summaryStep.text = "We appreciate your time."
-        
-        steps += [summaryStep]
-        
-        return ORKOrderedTask(identifier: "SurveyTask-Coffee", steps: steps)
-        
-    }()
+            var steps = [ORKStep]()
+            var images = [ORKImageChoice]()
+            
+            images += [ORKImageChoice(normalImage: UIImage(named: "tray.jpg"), selectedImage: UIImage(named: "tray.jpg"), text: "Test", value: NSNumber.init())]
+            
+            // Instruction step
+            let instructionStep = ORKInstructionStep(identifier: "IntroStep")
+            instructionStep.title = "Before Picture"
+            instructionStep.text = "This will provide an after picture to be analyzed for nutrition information."
+            
+            steps += [instructionStep]
+            
+            // Picture Step
+            let pictureStep = ORKImageCaptureStep(identifier: "before")
+            
+            steps += [pictureStep]
+            
+            let tempPictureStepAnswerFormat = ORKImageChoiceAnswerFormat(imageChoices: images)
+            //let tempPictureStepAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
+            let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "Before Picture", question: "Please take a before picture.", answer: tempPictureStepAnswerFormat)
+            
+            steps += [tempPictureStep]
+            
+            //SUMMARY
+            let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
+            summaryStep.title = "Thank you for taking a picture."
+            summaryStep.text = "We appreciate your time."
+            
+            steps += [summaryStep]
+            
+            return ORKOrderedTask(identifier: "Image-Before", steps: steps)
+            
+        }()
     
     /**
         After Picture
@@ -110,7 +119,7 @@ struct StudyTasks {
         
         let tempPictureStepAnswerFormat = ORKImageChoiceAnswerFormat(imageChoices: images)
         //let tempPictureStepAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
-        let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "After Pictuer", question: "Please take an after picture.", answer: tempPictureStepAnswerFormat)
+        let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "After Picture", question: "Please take an after picture.", answer: tempPictureStepAnswerFormat)
         
         steps += [tempPictureStep]
         
@@ -121,7 +130,7 @@ struct StudyTasks {
         
         steps += [summaryStep]
         
-        return ORKOrderedTask(identifier: "SurveyTask-Coffee", steps: steps)
+        return ORKOrderedTask(identifier: "Image-After", steps: steps)
         
     }()
     
