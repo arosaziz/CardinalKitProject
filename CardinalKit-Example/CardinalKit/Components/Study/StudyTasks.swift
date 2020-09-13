@@ -70,7 +70,7 @@ struct StudyTasks {
             // Instruction step
             let instructionStep = ORKInstructionStep(identifier: "IntroStep")
             instructionStep.title = "Before Picture"
-            instructionStep.text = "This will provide an after picture to be analyzed for nutrition information."
+            instructionStep.text = "This will provide a before picture to be analyzed for nutrition information."
             
             steps += [instructionStep]
             
@@ -80,7 +80,7 @@ struct StudyTasks {
             steps += [pictureStep]
             
             let tempPictureStepAnswerFormat = ORKImageChoiceAnswerFormat(imageChoices: images)
-            //let tempPictureStepAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
+        
             let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "Before Picture", question: "Please take a before picture.", answer: tempPictureStepAnswerFormat)
             
             steps += [tempPictureStep]
@@ -113,12 +113,12 @@ struct StudyTasks {
         steps += [instructionStep]
         
         // Picture Step
-        let pictureStep = ORKImageCaptureStep(identifier: "before")
+        let pictureStep = ORKImageCaptureStep(identifier: "after")
         
         steps += [pictureStep]
         
         let tempPictureStepAnswerFormat = ORKImageChoiceAnswerFormat(imageChoices: images)
-        //let tempPictureStepAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
+        
         let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "After Picture", question: "Please take an after picture.", answer: tempPictureStepAnswerFormat)
         
         steps += [tempPictureStep]
