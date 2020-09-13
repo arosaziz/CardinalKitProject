@@ -68,10 +68,13 @@ struct ActivitiesView: View {
         
         self.date = formatter.string(from: date)
         
-        let studyTableItems = StudyTableItem.allValues
+        /*let studyTableItems = StudyTableItem.allValues
         for study in studyTableItems {
             self.activities.append(StudyItem(study: study))
-        }
+        }*/
+        
+        self.activities.append(StudyItem(study: StudyTableItem.beforePicture))
+            self.activities.append(StudyItem(study: StudyTableItem.afterPicture))
     }
     
     var body: some View {
