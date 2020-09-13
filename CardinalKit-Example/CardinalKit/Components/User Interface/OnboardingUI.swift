@@ -407,6 +407,11 @@ struct OnboardingVC: UIViewControllerRepresentable {
                 return LoginCustomWaitStepViewController(step: step)
             }
             
+            if step is TempPictureStep {
+                print("It works")
+                return TempPictureStepViewController(step: step)
+            }
+            
             return nil
         }
     }

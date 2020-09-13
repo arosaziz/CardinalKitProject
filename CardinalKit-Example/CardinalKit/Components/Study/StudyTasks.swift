@@ -92,6 +92,9 @@ struct StudyTasks {
      */
     static let afterPictureTask: ORKOrderedTask = {
         var steps = [ORKStep]()
+        var images = [ORKImageChoice]()
+        
+        images += [ORKImageChoice(normalImage: UIImage(named: "tray.jpg"), selectedImage: UIImage(named: "tray.jpg"), text: "Test", value: NSNumber.init())]
         
         // Instruction step
         let instructionStep = ORKInstructionStep(identifier: "IntroStep")
@@ -101,9 +104,15 @@ struct StudyTasks {
         steps += [instructionStep]
         
         // Picture Step
-        let pictureStep = ORKImageCaptureStep(identifier: "before");
+        let pictureStep = ORKImageCaptureStep(identifier: "before")
         
         steps += [pictureStep]
+        
+        let tempPictureStepAnswerFormat = ORKImageChoiceAnswerFormat(imageChoices: images)
+        //let tempPictureStepAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
+        let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "After Pictuer", question: "Please take an after picture.", answer: tempPictureStepAnswerFormat)
+        
+        steps += [tempPictureStep]
         
         //SUMMARY
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
