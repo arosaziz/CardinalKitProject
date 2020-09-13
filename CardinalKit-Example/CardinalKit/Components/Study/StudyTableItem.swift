@@ -55,9 +55,9 @@ enum StudyTableItem: Int {
     var image: UIImage? {
         switch self {
         case .beforePicture:
-            return UIImage(named: "SurveyIcon")
+            return UIImage(named: "camera.png")
         default:
-            return UIImage(named: "ActivityIcon")
+            return UIImage(named: "camera.png")
         }
     }
     

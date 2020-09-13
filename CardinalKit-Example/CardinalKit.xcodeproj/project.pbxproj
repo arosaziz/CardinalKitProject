@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1756F388250EA32300CD6DF2 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 1756F387250EA32300CD6DF2 /* camera.png */; };
 		17A02B52250E83A6005B2A21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A02B51250E83A6005B2A21 /* GoogleService-Info.plist */; };
 		17A02B5A250E8DF4005B2A21 /* TempPictureStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02B59250E8DF4005B2A21 /* TempPictureStepViewController.swift */; };
 		17A02B5C250E915C005B2A21 /* TempPictureStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A02B5B250E915C005B2A21 /* TempPictureStepView.xib */; };
@@ -66,6 +67,7 @@
 /* Begin PBXFileReference section */
 		00480E2D79186BE9405F0F72 /* Pods-CardinalKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Tests/Pods-CardinalKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		07D78DA16FC9C3C7709EA243 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1756F387250EA32300CD6DF2 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = Assets.xcassets/Images/camera.png; sourceTree = "<group>"; };
 		17A02B51250E83A6005B2A21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17A02B59250E8DF4005B2A21 /* TempPictureStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPictureStepViewController.swift; sourceTree = "<group>"; };
 		17A02B5B250E915C005B2A21 /* TempPictureStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TempPictureStepView.xib; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		8E0A4383244A4A0400656518 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1756F387250EA32300CD6DF2 /* camera.png */,
 				17A02B51250E83A6005B2A21 /* GoogleService-Info.plist */,
 				8E0A4388244A4A0400656518 /* Assets.xcassets */,
 				17A02B5D250E9606005B2A21 /* tray.jpg */,
@@ -394,6 +397,7 @@
 				17A02B5C250E915C005B2A21 /* TempPictureStepView.xib in Resources */,
 				8E0A43B0244A4A0400656518 /* LaunchScreen.storyboard in Resources */,
 				8E0A43CD244A4D7C00656518 /* Main.storyboard in Resources */,
+				1756F388250EA32300CD6DF2 /* camera.png in Resources */,
 				17A02B5E250E9606005B2A21 /* tray.jpg in Resources */,
 				E2F1FD7824D62064006C39DF /* CKConfiguration.plist in Resources */,
 				8E0A43C1244A4A0400656518 /* LoginCustomWaitStepView.xib in Resources */,
