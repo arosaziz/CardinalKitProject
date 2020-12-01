@@ -29,6 +29,132 @@ struct StudyTasks {
     }()
     
     /**
+        Coffee Task Example for 9/2 Workshop
+     */
+    static let coffeeTask: ORKOrderedTask = {
+        var steps = [ORKStep]()
+        
+        // Instruction step
+        let instructionStep = ORKInstructionStep(identifier: "IntroStep")
+        instructionStep.title = "Patient Questionnaire"
+        instructionStep.text = "This information will help your doctors keep track of how you feel and how well you are able to do your usual activities. If you are unsure about how to answer a question, please give the best answer you can and make a written comment beside your answer."
+        
+        steps += [instructionStep]
+        
+        // Coffee Step
+        let healthScaleAnswerFormat = ORKAnswerFormat.scale(withMaximumValue: 5, minimumValue: 0, defaultValue: 3, step: 1, vertical: false, maximumValueDescription: "A Lot 😬", minimumValueDescription: "None 😴")
+        let healthScaleQuestionStep = ORKQuestionStep(identifier: "HealthScaleQuestionStep", title: "Coffee Intake", question: "How many cups of coffee did you have today?", answer: healthScaleAnswerFormat)
+        
+        steps += [healthScaleQuestionStep]
+        
+        //SUMMARY
+        let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
+        summaryStep.title = "Thank you for tracking your coffee."
+        summaryStep.text = "We appreciate your time."
+        
+        steps += [summaryStep]
+        
+        return ORKOrderedTask(identifier: "SurveyTask-Coffee", steps: steps)
+        
+    }()
+    
+    /**
+        Before Picture
+     */
+    static let beforePictureTask: ORKOrderedTask = {
+            var steps = [ORKStep]()
+            var images = [ORKImageChoice]()
+            var patientChoices = [ORKTextChoice]()
+            
+            images += [ORKImageChoice(normalImage: UIImage(named: "tray.jpg"), selectedImage: UIImage(named: "tray.jpg"), text: "Test", value: NSNumber.init())]
+            
+            patientChoices += [ORKTextChoice(text: "Patient 1", value: NSNumber.init())]
+            patientChoices += [ORKTextChoice(text: "Patient 2", value: NSNumber.init())]
+            
+            // Instruction step
+            let instructionStep = ORKInstructionStep(identifier: "IntroStep")
+            instructionStep.title = "Before Picture"
+            instructionStep.text = "This will provide a before picture to be analyzed for nutrition information."
+            
+            steps += [instructionStep]
+            
+            // Patient selection step
+            let patientStepAnswerFormat = ORKTextChoiceAnswerFormat(style: ORKChoiceAnswerStyle.multipleChoice, textChoices: patientChoices)
+            let patientStep = ORKQuestionStep(identifier: "PatientStep", title: "Select a Patient", question: "Please select a patient.", answer: patientStepAnswerFormat)
+            
+            steps += [patientStep]
+            
+            // Picture Step
+            let pictureStep = ORKImageCaptureStep(identifier: "before")
+            
+            steps += [pictureStep]
+            
+            let tempPictureStepAnswerFormat = ORKImageChoiceAnswerFormat(imageChoices: images)
+
+            let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "Before Picture", question: "Please take a before picture.", answer: tempPictureStepAnswerFormat)
+            
+            steps += [tempPictureStep]
+            
+            //SUMMARY
+            let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
+            summaryStep.title = "Thank you for taking a picture."
+            summaryStep.text = "We appreciate your time."
+            
+            steps += [summaryStep]
+            
+            return ORKOrderedTask(identifier: "Image-Before", steps: steps)
+            
+        }()
+    
+    /**
+        After Picture
+     */
+    static let afterPictureTask: ORKOrderedTask = {
+        var steps = [ORKStep]()
+        var images = [ORKImageChoice]()
+        var patientChoices = [ORKTextChoice]()
+        
+        images += [ORKImageChoice(normalImage: UIImage(named: "tray.jpg"), selectedImage: UIImage(named: "tray.jpg"), text: "Test", value: NSNumber.init())]
+        
+        patientChoices += [ORKTextChoice(text: "Patient 1", value: NSNumber.init())]
+        patientChoices += [ORKTextChoice(text: "Patient 2", value: NSNumber.init())]
+        
+        // Instruction step
+        let instructionStep = ORKInstructionStep(identifier: "IntroStep")
+        instructionStep.title = "After Picture"
+        instructionStep.text = "This will provide an after picture to be analyzed for nutrition information."
+        
+        steps += [instructionStep]
+        
+        // Patient selection step
+        let patientStepAnswerFormat = ORKTextChoiceAnswerFormat(style: ORKChoiceAnswerStyle.multipleChoice, textChoices: patientChoices)
+        let patientStep = ORKQuestionStep(identifier: "PatientStep", title: "Select a Patient", question: "Please select a patient.", answer: patientStepAnswerFormat)
+        
+        steps += [patientStep]
+        
+        // Picture Step
+        let pictureStep = ORKImageCaptureStep(identifier: "after")
+        
+        steps += [pictureStep]
+        
+        let tempPictureStepAnswerFormat = ORKImageChoiceAnswerFormat(imageChoices: images)
+        
+        let tempPictureStep = ORKQuestionStep(identifier: "TempPictureStep", title: "After Picture", question: "Please take an after picture.", answer: tempPictureStepAnswerFormat)
+        
+        steps += [tempPictureStep]
+        
+        //SUMMARY
+        let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
+        summaryStep.title = "Thank you for taking a picture."
+        summaryStep.text = "We appreciate your time."
+        
+        steps += [summaryStep]
+        
+        return ORKOrderedTask(identifier: "Image-After", steps: steps)
+        
+    }()
+    
+    /**
      Sample task created step-by-step!
     */
     static let sf12Task: ORKOrderedTask = {
@@ -70,7 +196,7 @@ struct StudyTasks {
         
         steps += [booleanQuestionStep]
         
-        //SUMARY
+        //SUMMARY
         let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
         summaryStep.title = "Thank you."
         summaryStep.text = "We appreciate your time."

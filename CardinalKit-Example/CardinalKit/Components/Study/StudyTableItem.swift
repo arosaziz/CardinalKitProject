@@ -7,11 +7,9 @@
 
 import Foundation
 import UIKit
+import ResearchKit
 
 enum StudyTableItem: Int {
-    
-    // table items
-    case survey, activeTask
     
     static var allValues: [StudyTableItem] {
         var index = 0
@@ -23,31 +21,73 @@ enum StudyTableItem: Int {
             }
         )
     }
-    
+
+    // table items
+    case beforePicture, afterPicture
+
+    var task: ORKOrderedTask {
+        switch self {
+        case .beforePicture:
+            return StudyTasks.beforePictureTask
+        case .afterPicture:
+            return StudyTasks.afterPictureTask
+        }
+    }
+
     var title: String {
         switch self {
-        case .survey:
-            return "Survey Sample"
-        case .activeTask:
-            return "Active Task Sample"
+        case .beforePicture:
+            return "Before Picture"
+        case .afterPicture:
+            return "After Picture"
         }
     }
-    
+
     var subtitle: String {
         switch self {
-        case .survey:
-            return "Answer some short questions."
-        case .activeTask:
-            return "Perform an action."
+        case .beforePicture:
+            return "Take a before picture."
+        case .afterPicture:
+            return "Take an after picture."
+        }
+    }
+
+    var image: UIImage? {
+        switch self {
+        case .beforePicture:
+            return UIImage(named: "camera.png")
+        default:
+            return UIImage(named: "camera.png")
         }
     }
     
-    var image: UIImage? {
-        switch self {
-        case .survey:
-            return UIImage(named: "SurveyIcon")
-        default:
-            return UIImage(named: "ActivityIcon")
-        }
-    }
+//    case coffee
+//
+//    var task: ORKOrderedTask {
+//        switch self {
+//        case .coffee:
+//            return StudyTasks.coffeeTask
+//        }
+//    }
+//
+//    var title: String {
+//        switch self {
+//        case .coffee:
+//            return "Coffee Task"
+//        }
+//    }
+//
+//    var subtitle: String {
+//        switch self {
+//        case .coffee:
+//            return "Record your coffee intake for the day."
+//        }
+//    }
+//
+//    var image: UIImage? {
+//        switch self {
+//        case .coffee:
+//            return UIImage(named: "CoffeeIcon")
+//        }
+//    }
 }

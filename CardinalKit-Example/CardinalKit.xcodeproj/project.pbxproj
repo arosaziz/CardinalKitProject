@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1756F388250EA32300CD6DF2 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 1756F387250EA32300CD6DF2 /* camera.png */; };
+		17A02B52250E83A6005B2A21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17A02B51250E83A6005B2A21 /* GoogleService-Info.plist */; };
+		17A02B5A250E8DF4005B2A21 /* TempPictureStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02B59250E8DF4005B2A21 /* TempPictureStepViewController.swift */; };
+		17A02B5C250E915C005B2A21 /* TempPictureStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A02B5B250E915C005B2A21 /* TempPictureStepView.xib */; };
+		17A02B5E250E9606005B2A21 /* tray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17A02B5D250E9606005B2A21 /* tray.jpg */; };
 		8E0A43A7244A4A0400656518 /* ProfileTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437A244A4A0400656518 /* ProfileTableItem.swift */; };
 		8E0A43A8244A4A0400656518 /* StaticProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437B244A4A0400656518 /* StaticProfileViewController.swift */; };
 		8E0A43AA244A4A0400656518 /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A437F244A4A0400656518 /* WithdrawalViewController.swift */; };
@@ -24,18 +29,23 @@
 		8E0A43BC244A4A0400656518 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A439A244A4A0400656518 /* OnboardingViewController.swift */; };
 		8E0A43BD244A4A0400656518 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A439B244A4A0400656518 /* IntroductionViewController.swift */; };
 		8E0A43BE244A4A0400656518 /* CKHealthDataStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A439D244A4A0400656518 /* CKHealthDataStepViewController.swift */; };
-		8E0A43C0244A4A0400656518 /* LoginStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A439F244A4A0400656518 /* LoginStep.swift */; };
+		8E0A43C0244A4A0400656518 /* PasswordlessLoginStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A439F244A4A0400656518 /* PasswordlessLoginStep.swift */; };
 		8E0A43C1244A4A0400656518 /* LoginCustomWaitStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A43A1244A4A0400656518 /* LoginCustomWaitStepView.xib */; };
 		8E0A43C2244A4A0400656518 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A43A2244A4A0400656518 /* ConsentDocument.swift */; };
 		8E0A43C3244A4A0400656518 /* LoginCustomWaitStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A43A3244A4A0400656518 /* LoginCustomWaitStepViewController.swift */; };
 		8E0A43CD244A4D7C00656518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A43CB244A4D7C00656518 /* Main.storyboard */; };
 		8E0A43CE244A60D800656518 /* Pods_CardinalKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31556B648F48DA664CEE80 /* Pods_CardinalKit_Example.framework */; };
 		8E0A43CF244A60D800656518 /* Pods_CardinalKit_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D31556B648F48DA664CEE80 /* Pods_CardinalKit_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8E0A43D2244A675F00656518 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A43D1244A675F00656518 /* GoogleService-Info.plist */; };
 		8E0A43D5244A693D00656518 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0A43D4244A693D00656518 /* HealthKit.framework */; };
 		8E40DC042471E5940027536B /* CKNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40DC032471E5940027536B /* CKNetworkManager.swift */; };
 		8E67519C24B7ACB7004EC405 /* StudyTableViewController+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E67519B24B7ACB7004EC405 /* StudyTableViewController+CardinalKit.swift */; };
 		8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */; };
+		E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235077624F7082700CC1899 /* SceneDelegate.swift */; };
+		E29143FC24E74AD100EE97B2 /* OnboardingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29143FB24E74AD100EE97B2 /* OnboardingUI.swift */; };
+		E29143FE24E769F000EE97B2 /* StudiesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29143FD24E769F000EE97B2 /* StudiesUI.swift */; };
+		E2CB7FE524F730C80039C24A /* CKConfiguration-example.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CB7FE424F730C80039C24A /* CKConfiguration-example.plist */; };
+		E2DF9F062500B9F000A93B93 /* LoginStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF9F052500B9F000A93B93 /* LoginStep.swift */; };
+		E2DF9F0A2500C9CE00A93B93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF9F092500C9CE00A93B93 /* LoginViewController.swift */; };
 		E2F1FD7624D61EDA006C39DF /* CKPropertyReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1FD7524D61EDA006C39DF /* CKPropertyReader.swift */; };
 		E2F1FD7824D62064006C39DF /* CKConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2F1FD7724D62064006C39DF /* CKConfiguration.plist */; };
 /* End PBXBuildFile section */
@@ -57,6 +67,11 @@
 /* Begin PBXFileReference section */
 		00480E2D79186BE9405F0F72 /* Pods-CardinalKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Tests/Pods-CardinalKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		07D78DA16FC9C3C7709EA243 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1756F387250EA32300CD6DF2 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = Assets.xcassets/Images/camera.png; sourceTree = "<group>"; };
+		17A02B51250E83A6005B2A21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17A02B59250E8DF4005B2A21 /* TempPictureStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPictureStepViewController.swift; sourceTree = "<group>"; };
+		17A02B5B250E915C005B2A21 /* TempPictureStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TempPictureStepView.xib; sourceTree = "<group>"; };
+		17A02B5D250E9606005B2A21 /* tray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tray.jpg; path = Assets.xcassets/Images/tray.jpg; sourceTree = "<group>"; };
 		1D31556B648F48DA664CEE80 /* Pods_CardinalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DC264876E45FE5A3FD8701 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		58275A0CAB0C7223B21F375D /* Pods-CardinalKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Tests/Pods-CardinalKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,18 +98,23 @@
 		8E0A439A244A4A0400656518 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		8E0A439B244A4A0400656518 /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		8E0A439D244A4A0400656518 /* CKHealthDataStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKHealthDataStepViewController.swift; sourceTree = "<group>"; };
-		8E0A439F244A4A0400656518 /* LoginStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStep.swift; sourceTree = "<group>"; };
+		8E0A439F244A4A0400656518 /* PasswordlessLoginStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordlessLoginStep.swift; sourceTree = "<group>"; };
 		8E0A43A1244A4A0400656518 /* LoginCustomWaitStepView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginCustomWaitStepView.xib; sourceTree = "<group>"; };
 		8E0A43A2244A4A0400656518 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		8E0A43A3244A4A0400656518 /* LoginCustomWaitStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCustomWaitStepViewController.swift; sourceTree = "<group>"; };
 		8E0A43C9244A4C6500656518 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0A43CC244A4D7C00656518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		8E0A43D1244A675F00656518 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E0A43D4244A693D00656518 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		8E40DC032471E5940027536B /* CKNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKNetworkManager.swift; sourceTree = "<group>"; };
 		8E67519B24B7ACB7004EC405 /* StudyTableViewController+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StudyTableViewController+CardinalKit.swift"; sourceTree = "<group>"; };
 		8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CardinalKit.swift"; sourceTree = "<group>"; };
 		CB97C14C759E56B88E4E3941 /* Pods_CardinalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardinalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E235077624F7082700CC1899 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E29143FB24E74AD100EE97B2 /* OnboardingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUI.swift; sourceTree = "<group>"; };
+		E29143FD24E769F000EE97B2 /* StudiesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesUI.swift; sourceTree = "<group>"; };
+		E2CB7FE424F730C80039C24A /* CKConfiguration-example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CKConfiguration-example.plist"; sourceTree = "<group>"; };
+		E2DF9F052500B9F000A93B93 /* LoginStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStep.swift; sourceTree = "<group>"; };
+		E2DF9F092500C9CE00A93B93 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E2F1FD7524D61EDA006C39DF /* CKPropertyReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKPropertyReader.swift; sourceTree = "<group>"; };
 		E2F1FD7724D62064006C39DF /* CKConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CKConfiguration.plist; sourceTree = "<group>"; };
 		F30ABA7020E91EBA421A80F9 /* Pods-CardinalKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardinalKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-CardinalKit_Example/Pods-CardinalKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +170,7 @@
 				8E0A43C5244A4A5700656518 /* Components */,
 				8E0A4396244A4A0400656518 /* AppDelegate.swift */,
 				8EBE6F9B24B3C0E60093D07C /* AppDelegate+CardinalKit.swift */,
+				E235077624F7082700CC1899 /* SceneDelegate.swift */,
 				8E0A43CB244A4D7C00656518 /* Main.storyboard */,
 			);
 			name = "CardinalKit-Example";
@@ -194,15 +215,18 @@
 		8E0A4383244A4A0400656518 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1756F387250EA32300CD6DF2 /* camera.png */,
+				17A02B51250E83A6005B2A21 /* GoogleService-Info.plist */,
 				8E0A4388244A4A0400656518 /* Assets.xcassets */,
+				17A02B5D250E9606005B2A21 /* tray.jpg */,
 				8E0A4385244A4A0400656518 /* ResearchKit */,
 				8E0A4389244A4A0400656518 /* LaunchScreen.storyboard */,
 				8E0A4384244A4A0400656518 /* Constants.swift */,
 				8E0A4378244A4A0300656518 /* CardinalKit_Example-Bridging-Header.h */,
-				8E0A43D1244A675F00656518 /* GoogleService-Info.plist */,
 				8E0A43C9244A4C6500656518 /* Info.plist */,
 				E2F1FD7524D61EDA006C39DF /* CKPropertyReader.swift */,
 				E2F1FD7724D62064006C39DF /* CKConfiguration.plist */,
+				E2CB7FE424F730C80039C24A /* CKConfiguration-example.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,9 +267,12 @@
 			children = (
 				8E0A43A0244A4A0400656518 /* Views */,
 				8E0A439D244A4A0400656518 /* CKHealthDataStepViewController.swift */,
-				8E0A439F244A4A0400656518 /* LoginStep.swift */,
+				8E0A439F244A4A0400656518 /* PasswordlessLoginStep.swift */,
+				E2DF9F052500B9F000A93B93 /* LoginStep.swift */,
 				8E0A43A3244A4A0400656518 /* LoginCustomWaitStepViewController.swift */,
 				8E0A43A2244A4A0400656518 /* ConsentDocument.swift */,
+				E2DF9F092500C9CE00A93B93 /* LoginViewController.swift */,
+				17A02B59250E8DF4005B2A21 /* TempPictureStepViewController.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -254,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				8E0A43A1244A4A0400656518 /* LoginCustomWaitStepView.xib */,
+				17A02B5B250E915C005B2A21 /* TempPictureStepView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +289,9 @@
 		8E0A43C5244A4A5700656518 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+
+				E29143FA24E74AB700EE97B2 /* User Interface */,
+
 				8E40DC022471E5590027536B /* Networking */,
 				8E0A4379244A4A0400656518 /* Profile */,
 				8E0A4399244A4A0400656518 /* Onboarding */,
@@ -289,6 +320,16 @@
 				00480E2D79186BE9405F0F72 /* Pods-CardinalKit_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+
+		E29143FA24E74AB700EE97B2 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E29143FB24E74AD100EE97B2 /* OnboardingUI.swift */,
+				E29143FD24E769F000EE97B2 /* StudiesUI.swift */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,11 +397,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0A43AF244A4A0400656518 /* Assets.xcassets in Resources */,
+				17A02B5C250E915C005B2A21 /* TempPictureStepView.xib in Resources */,
 				8E0A43B0244A4A0400656518 /* LaunchScreen.storyboard in Resources */,
 				8E0A43CD244A4D7C00656518 /* Main.storyboard in Resources */,
+				1756F388250EA32300CD6DF2 /* camera.png in Resources */,
+				17A02B5E250E9606005B2A21 /* tray.jpg in Resources */,
 				E2F1FD7824D62064006C39DF /* CKConfiguration.plist in Resources */,
 				8E0A43C1244A4A0400656518 /* LoginCustomWaitStepView.xib in Resources */,
-				8E0A43D2244A675F00656518 /* GoogleService-Info.plist in Resources */,
+				E2CB7FE524F730C80039C24A /* CKConfiguration-example.plist in Resources */,
+				17A02B52250E83A6005B2A21 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,14 +493,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DF9F0A2500C9CE00A93B93 /* LoginViewController.swift in Sources */,
 				8E0A43A8244A4A0400656518 /* StaticProfileViewController.swift in Sources */,
-				8E0A43C0244A4A0400656518 /* LoginStep.swift in Sources */,
+				E29143FC24E74AD100EE97B2 /* OnboardingUI.swift in Sources */,
+				8E0A43C0244A4A0400656518 /* PasswordlessLoginStep.swift in Sources */,
 				8E0A43B3244A4A0400656518 /* StudyTasks.swift in Sources */,
 				8E40DC042471E5940027536B /* CKNetworkManager.swift in Sources */,
 				8E0A43BC244A4A0400656518 /* OnboardingViewController.swift in Sources */,
 				8E0A43BD244A4A0400656518 /* IntroductionViewController.swift in Sources */,
+				E2DF9F062500B9F000A93B93 /* LoginStep.swift in Sources */,
 				8EBE6F9C24B3C0E60093D07C /* AppDelegate+CardinalKit.swift in Sources */,
 				8E0A43B9244A4A0400656518 /* AppDelegate.swift in Sources */,
+				E29143FE24E769F000EE97B2 /* StudiesUI.swift in Sources */,
 				8E0A43B4244A4A0400656518 /* StudyTableViewCell.swift in Sources */,
 				8E0A43A7244A4A0400656518 /* ProfileTableItem.swift in Sources */,
 				8E0A43B5244A4A0400656518 /* StudyTableItem.swift in Sources */,
@@ -466,10 +515,12 @@
 				8E0A43AC244A4A0400656518 /* CKStudyUser.swift in Sources */,
 				8E0A43C3244A4A0400656518 /* LoginCustomWaitStepViewController.swift in Sources */,
 				E2F1FD7624D61EDA006C39DF /* CKPropertyReader.swift in Sources */,
+				E235077724F7082700CC1899 /* SceneDelegate.swift in Sources */,
 				8E67519C24B7ACB7004EC405 /* StudyTableViewController+CardinalKit.swift in Sources */,
 				8E0A43AA244A4A0400656518 /* WithdrawalViewController.swift in Sources */,
 				8E0A43BA244A4A0400656518 /* LaunchContainerViewController.swift in Sources */,
 				8E0A43C2244A4A0400656518 /* ConsentDocument.swift in Sources */,
+				17A02B5A250E8DF4005B2A21 /* TempPictureStepViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,10 +654,10 @@
 				CODE_SIGN_ENTITLEMENTS = "CardinalKit-Example.entitlements";
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.sample-study";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cardinalkit;
 				PRODUCT_NAME = "CardinalKit Example";
 				SWIFT_OBJC_BRIDGING_HEADER = "CardinalKit/Supporting Files/CardinalKit_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -624,10 +675,10 @@
 				CODE_SIGN_ENTITLEMENTS = "CardinalKit-Example.entitlements";
 				DEVELOPMENT_TEAM = CQRZ4E7K9U;
 				INFOPLIST_FILE = "CardinalKit/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs342.sample-study";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cardinalkit;
 				PRODUCT_NAME = "CardinalKit Example";
 				SWIFT_OBJC_BRIDGING_HEADER = "CardinalKit/Supporting Files/CardinalKit_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
