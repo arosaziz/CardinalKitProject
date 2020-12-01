@@ -289,7 +289,9 @@
 		8E0A43C5244A4A5700656518 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+
 				E29143FA24E74AB700EE97B2 /* User Interface */,
+
 				8E40DC022471E5590027536B /* Networking */,
 				8E0A4379244A4A0400656518 /* Profile */,
 				8E0A4399244A4A0400656518 /* Onboarding */,
@@ -320,6 +322,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+
 		E29143FA24E74AB700EE97B2 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
